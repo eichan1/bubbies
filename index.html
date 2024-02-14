@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Be My Valentine</title>
+    <title>First page</title>
     <style>
         body {
             text-align: center;
@@ -14,10 +14,14 @@
             color: #FF9494; /* Light salmon text color */
         }
 
-        #valentineQuestion {
+        #introQuestion {
             font-size: 30px;
             margin-bottom: 10px;
         }
+
+        p {
+		font-size: 20px;
+	    }
 
         .answerButton {
             padding: 10px 20px;
@@ -40,19 +44,11 @@
 </head>
 
 <body>
-    <div id="valentineQuestion"><b>will you be my valentine pookie</b></div>
-    <button class="answerButton" onclick="location.href='thankyou.html'">yes omg</button>
-    <button class="answerButton" id="noButton">ew im okay</button>
+    <div id="introQuestion"><b>hi bubbies! i heard tomorrow is valentines day (tomorrow as in the next hour)</b></div>
+    <p>and i just wanted to ask.....</p>
+    <button class="answerButton" onclick="location.href='valentine.html'">click here</button>
     <br>
-    <img src='cat.gif' alt='' class="responsive">
-
-    <script>
-        document.getElementById('noButton').addEventListener('click', function () {
-            var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
-            var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
-            yesButton.style.fontSize = (currentFontSize + 10) + 'px'; // Increase font size by 10px
-        });
-    </script>
+    <img src='wonderfulgirl.gif' alt='' class="responsive">
 </body>
 
 </html>

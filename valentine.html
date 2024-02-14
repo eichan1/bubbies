@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            font-family: 'Courier', monospace;
+            background-color: #FFF5E4; /* Light pastel peach */
+            color: #FF9494; /* Light salmon text color */
+        }
+
+        #valentineQuestion {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .answerButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'Courier', monospace;
+            background-color: #FFE3E1; /* Light pastel peach */
+            color: #e67373; /* Light salmon text color */
+            border-radius: 12px;
+            border: 2px solid #FFE3E1; /* Light pastel peach border */
+        }
+
+        .responsive {
+            max-width: 70%;
+            height: auto;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="valentineQuestion"><b>will you be my valentine pookie</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">yes omg</button>
+    <button class="answerButton" id="noButton">ew im okay</button>
+    <br>
+    <img src='cat.jpg' alt='el gato holding flowers' class="responsive">
+
+    <script>
+        document.getElementById('noButton').addEventListener('click', function () {
+            var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
+            var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentFontSize + 10) + 'px'; // Increase font size by 10px
+        });
+    </script>
+</body>
+
+</html>
