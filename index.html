@@ -10,8 +10,8 @@
             text-align: center;
             margin-top: 50px;
             font-family: 'Courier', monospace;
-            background-color: #FEE2E2; /* Light pastel red-pink */
-            color: #3D405B; /* Dark slate blue-gray */
+            background-color: #BDD5EA; /* Light blue-gray */
+            color: #1F2937; /* Dark blue-gray */
         }
 
         #valentineQuestion {
@@ -25,26 +25,26 @@
             cursor: pointer;
             margin: 10px;
             font-family: 'Courier', monospace;
-            margin-bottom: 20px;
-            background-color: #F4ACB7; /* Light pastel pink */
-            color: #3D405B; /* Dark slate blue-gray */
+            background-color: #A3BFFA; /* Light blue */
+            color: #1F2937; /* Dark blue-gray */
             border-radius: 12px;
-            border: 2px solid #F49D9B; /* Pastel red-pink border */
+            border: 2px solid #7186A0; /* Medium blue-gray border */
         }
 
         .responsive {
-            max-width: 100%;
+            max-width: 70%; /* Adjusted width for better centering */
             height: auto;
-            margin-bottom: 20px;
+            margin: 20px auto; /* Center the image */
         }
     </style>
 </head>
 
 <body>
-    <img src='cat.gif' alt='' class="responsive">
     <div id="valentineQuestion"><b>Will you be my valentine, pookie?</b></div>
     <button class="answerButton" onclick="location.href='thankyou.html'">Yes, OMG</button>
     <button class="answerButton" id="noButton">Ew, I'm okay</button>
+    <br>
+    <img src='cat.gif' alt='' class="responsive">
 
     <script>
         document.getElementById('noButton').addEventListener('click', function () {
